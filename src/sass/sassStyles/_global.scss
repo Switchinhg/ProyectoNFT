@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+.bg{
+    background-color: $bg;
+}
+
+.buttonPrimary{
+    animation: magicText 3s linear infinite;
+   
+    background: linear-gradient(
+        to right,
+        $blanco,
+        $blanco,
+        $btnColor1,
+        $btnColor2,
+        $btnColor1,
+        $blanco,
+        
+    );
+    animation-play-state: paused;
+    background-size: 200%;
+    color: black;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+
+    &:hover{
+        animation-play-state: running;
+    }
+}
+
+.buttonSecondary{
+    
+    background: linear-gradient($bg, $bg) padding-box,
+    linear-gradient(to right bottom , $blanco, $btnColor2) border-box;
+
+    border: 1px solid transparent;
+    border-radius: 50px;
+
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+

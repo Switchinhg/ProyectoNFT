@@ -1,0 +1,58 @@
+.heroWrapper{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem 5rem;
+    height: calc(100vh - 71px);
+    
+    .starsWrapper{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right:0;
+        overflow: hidden;
+        .star{
+            position: absolute;
+            color: white;
+        }
+    }
+    .cta{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: flex-end;
+        gap: 1rem;
+        z-index: 2;
+        
+    }
+    .img{
+        display: flex;
+        align-items: center;
+        width: 500px;
+        text-align: center;
+        transform: skew(-3deg);
+        transition: 1s;
+        &:hover{
+        transform: skew(0);
+            
+        }
+        img{
+            max-width: 450px;
+            border-radius: 50%;
+            box-shadow: 40px 10px 100px aqua;
+            transition: 1s;
+
+            &:hover{
+            box-shadow: 0 0 50px aqua;
+                
+            }
+        }
+    }
+    .buttons{
+        display: flex;
+        gap: 1rem;
+    }
+}
+

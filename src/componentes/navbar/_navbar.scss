@@ -1,0 +1,75 @@
+.nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap:1rem;
+    padding: 0.4rem 0;
+    margin: 0 4rem;
+    position: relative;
+    z-index: 2;
+    background-color: $bg;
+    .links{
+        margin-left: 2rem;
+        display: flex;
+        gap: 1rem;
+    }
+    .search{
+        flex-grow: 1;
+        display: flex;
+        justify-content: flex-end;
+        color: white;
+        gap: 1rem;
+        .input{
+            box-shadow: 0 0 2px white;
+            display: flex;
+            gap: 0.5rem;
+            align-items: center;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            input{
+                background-color: rgba(255, 255, 255, 0);
+                border: none;
+                outline: none;
+                color: white;
+            }
+        }
+    }
+    .conectWallet{
+        button{
+            background-color: rgba(255, 255, 255, 0);
+            border: none;
+            box-shadow: 0 0 2px white;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+
+            /* Colors */
+
+            p{
+                animation: magicText 3s linear infinite;
+                background: linear-gradient(
+                    to right,
+                    white,
+                    lightseagreen,
+                    lightseagreen,
+                    lightseagreen,
+                    white
+                );
+                background-size: 200%;
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        &:hover{
+            cursor: pointer;
+        }
+        }
+    }
+    .useIcon{
+        img{    
+            cursor: pointer;
+            border-radius: 50%;
+            border: solid 2px lightseagreen;
+            box-shadow: 0 0 2px lightseagreen;
+        }
+    }
+}

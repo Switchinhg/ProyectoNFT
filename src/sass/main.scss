@@ -1,0 +1,12 @@
+
+
+@import './sassStyles/variables';
+@import './sassStyles/mixins';
+@import './sassStyles/global';
+@import './sassStyles/animations';
+@import './sassStyles/fonts';
+@import './sassStyles/functions';
+
+/* Componentes */
+@import '../componentes/navbar/navbar';
+@import '../componentes/frontPage/hero';

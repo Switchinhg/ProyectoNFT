@@ -1,13 +1,205 @@
-body {
+/* mas claro */
+/* mas fuerte */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap");
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.bg {
+  background-color: rgb(5, 23, 32);
 }
+
+.buttonPrimary {
+  animation: magicText 3s linear infinite;
+  background: linear-gradient(to right, rgb(255, 255, 255), rgb(255, 255, 255), #4cc3ff, #00acff, #4cc3ff, rgb(255, 255, 255));
+  animation-play-state: paused;
+  background-size: 200%;
+  color: black;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+}
+.buttonPrimary:hover {
+  animation-play-state: running;
+}
+
+.buttonSecondary {
+  background: linear-gradient(rgb(5, 23, 32), rgb(5, 23, 32)) padding-box, linear-gradient(to right bottom, rgb(255, 255, 255), #00acff) border-box;
+  border: 1px solid transparent;
+  border-radius: 50px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+@keyframes magicText {
+  from {
+    background-position: 0% center;
+  }
+  to {
+    background-position: -200% center;
+  }
+}
+h1 {
+  font-size: 90px;
+  font-weight: Bold;
+  color: white;
+}
+
+h2 {
+  font-size: 64px;
+  font-weight: Bold;
+  color: white;
+}
+
+h3 {
+  font-size: 45px;
+  font-weight: 600;
+  color: white;
+}
+
+h4 {
+  font-size: 32px;
+  font-weight: 600;
+  color: white;
+}
+
+h5 {
+  font-size: 23px;
+  font-weight: 600;
+  color: white;
+}
+
+p, button, h6 {
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+}
+
+.micro {
+  font-size: 11px;
+  font-weight: 500;
+  color: gray;
+}
+
+/* Componentes */
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.4rem 0;
+  margin: 0 4rem;
+  position: relative;
+  z-index: 2;
+  background-color: rgb(5, 23, 32);
+}
+.nav .links {
+  margin-left: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+.nav .search {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+  color: white;
+  gap: 1rem;
+}
+.nav .search .input {
+  box-shadow: 0 0 2px white;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+}
+.nav .search .input input {
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  outline: none;
+  color: white;
+}
+.nav .conectWallet button {
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  box-shadow: 0 0 2px white;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  /* Colors */
+}
+.nav .conectWallet button p {
+  animation: magicText 3s linear infinite;
+  background: linear-gradient(to right, white, lightseagreen, lightseagreen, lightseagreen, white);
+  background-size: 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.nav .conectWallet button:hover {
+  cursor: pointer;
+}
+.nav .useIcon img {
+  cursor: pointer;
+  border-radius: 50%;
+  border: solid 2px lightseagreen;
+  box-shadow: 0 0 2px lightseagreen;
+}
+
+.heroWrapper {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem 5rem;
+  height: calc(100vh - 71px);
+}
+.heroWrapper .starsWrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+}
+.heroWrapper .starsWrapper .star {
+  position: absolute;
+  color: white;
+}
+.heroWrapper .cta {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: flex-end;
+  gap: 1rem;
+  z-index: 2;
+}
+.heroWrapper .img {
+  display: flex;
+  align-items: center;
+  width: 500px;
+  text-align: center;
+  transform: skew(-3deg);
+  transition: 1s;
+}
+.heroWrapper .img:hover {
+  transform: skew(0);
+}
+.heroWrapper .img img {
+  max-width: 450px;
+  border-radius: 50%;
+  box-shadow: 40px 10px 100px aqua;
+  transition: 1s;
+}
+.heroWrapper .img img:hover {
+  box-shadow: 0 0 50px aqua;
+}
+.heroWrapper .buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+/*# sourceMappingURL=index.css.map */

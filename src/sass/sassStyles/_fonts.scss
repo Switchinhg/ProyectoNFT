@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap');
+
+
+
+
+h1{
+    @include fonts(90px, Bold,white);
+}
+h2{
+    @include fonts(64px, Bold,white)
+}
+h3{
+    @include fonts(45px, 600,white)
+}
+h4{
+    @include fonts(32px, 600,white)
+}
+h5{
+    @include fonts(23px, 600,white)
+}
+p,button,h6{
+    @include fonts(16px, 600,white)
+}
+.micro{
+    @include fonts(11px, 500,gray)
+}
