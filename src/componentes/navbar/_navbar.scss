@@ -8,6 +8,7 @@
     position: relative;
     z-index: 2;
     background-color: $bg;
+    height: 71px;
     .links{
         margin-left: 2rem;
         display: flex;
@@ -70,6 +71,19 @@
             border-radius: 50%;
             border: solid 2px lightseagreen;
             box-shadow: 0 0 2px lightseagreen;
+        }
+    }
+    .login{
+        
+        a{
+            border: none;
+            background-color: rgba(0, 0, 0, 0);
+            cursor: pointer;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            box-shadow: 0 0 2px white;
+            text-decoration: none;
+            color: white;
         }
     }
 }

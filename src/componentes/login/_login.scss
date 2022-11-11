@@ -1,0 +1,37 @@
+.loginContainer{
+    height: calc(100vh - 71px);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2rem;
+
+
+    .loginFormWrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .textoLogin{
+            font-size: 2rem;
+            padding: 1rem;
+        }
+        width: 300px;
+        input{
+            width: 100%;
+            padding: 0.5rem 1rem;
+            margin-bottom: 0.5rem;
+        }
+        .error{
+            color: red;
+        }
+        .loginError{
+            height: 20px ;
+        }
+        .link{
+            color:lightskyblue;
+            cursor: pointer;
+            user-select: none;
+        }
+    }
+
+}

@@ -1,7 +1,12 @@
 import React from 'react'
 import {SlMagnifier} from 'react-icons/sl'
+import { NavLink } from 'react-router-dom'
+import { }
 
 export default function Navbar() {
+
+
+
   return (
     <div className='nav'>
         <div className="logo">
@@ -19,7 +24,10 @@ export default function Navbar() {
                 <input type="text"  />
             </div>
         </div>
-        <div className="conectWallet">
+          {/* Si no esta logeado que salga conectarse por ahora no lo esta*/}
+
+        
+        {/* <div className="conectWallet">
             <button>
                 <p>
                 Connect Wallet
@@ -27,8 +35,16 @@ export default function Navbar() {
                 </button>
         </div>
         <div className="useIcon">
-            {/* OnClick en la img */}
+            * OnClick en la img *
             <img src="https://picsum.photos/50/50" alt="" />
+        </div>  */}
+
+        <div onClick={} style={{color:'white'}}>logout</div>
+
+        <div className='login'>
+            <NavLink to='/login' >LOGIN</NavLink>
         </div>
+
+        
     </div>
 )}

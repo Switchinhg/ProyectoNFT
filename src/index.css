@@ -96,6 +96,7 @@ p, button, h6 {
   position: relative;
   z-index: 2;
   background-color: rgb(5, 23, 32);
+  height: 71px;
 }
 .nav .links {
   margin-left: 2rem;
@@ -147,6 +148,16 @@ p, button, h6 {
   border-radius: 50%;
   border: solid 2px lightseagreen;
   box-shadow: 0 0 2px lightseagreen;
+}
+.nav .login a {
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  box-shadow: 0 0 2px white;
+  text-decoration: none;
+  color: white;
 }
 
 .heroWrapper {
@@ -200,6 +211,41 @@ p, button, h6 {
 .heroWrapper .buttons {
   display: flex;
   gap: 1rem;
+}
+
+.loginContainer {
+  height: calc(100vh - 71px);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+.loginContainer .loginFormWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+}
+.loginContainer .loginFormWrapper .textoLogin {
+  font-size: 2rem;
+  padding: 1rem;
+}
+.loginContainer .loginFormWrapper input {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  margin-bottom: 0.5rem;
+}
+.loginContainer .loginFormWrapper .error {
+  color: red;
+}
+.loginContainer .loginFormWrapper .loginError {
+  height: 20px;
+}
+.loginContainer .loginFormWrapper .link {
+  color: lightskyblue;
+  cursor: pointer;
+  user-select: none;
 }
 
 /*# sourceMappingURL=index.css.map */

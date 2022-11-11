@@ -11,6 +11,7 @@ export default function Hero() {
         <h2>Explore the NFT world, collect and sell your artwork</h2>
         <p className="micro">Trade with Simpler and Smarter NFT World</p>
         <div className="buttons">
+
           <button className='buttonPrimary'>EXPLORE MORE</button>
           <button className='buttonSecondary'>Create</button>
         </div>
