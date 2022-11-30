@@ -7,8 +7,21 @@
     margin: 0 4rem;
     position: relative;
     z-index: 2;
-    background-color: $bg;
+    // background-color: $bg;
     height: 71px;
+    .logo{
+        a{
+            color:white;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 20px;
+            font-weight: bold;
+            &:hover{
+                color:lightcoral;
+            }
+        }
+        
+    }
     .links{
         margin-left: 2rem;
         display: flex;
@@ -75,7 +88,7 @@
     }
     .login{
         
-        a{
+        a,p{
             border: none;
             background-color: rgba(0, 0, 0, 0);
             cursor: pointer;
@@ -84,6 +97,10 @@
             box-shadow: 0 0 2px white;
             text-decoration: none;
             color: white;
+            &:hover{
+                color:lightcoral;
+            }
         }
     }
+    
 }

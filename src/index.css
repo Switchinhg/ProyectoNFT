@@ -9,7 +9,7 @@
 }
 
 .bg {
-  background-color: rgb(5, 23, 32);
+  background: linear-gradient(45deg, rgb(23, 23, 23) 0%, rgb(37, 37, 37) 100%);
 }
 
 .buttonPrimary {
@@ -95,8 +95,17 @@ p, button, h6 {
   margin: 0 4rem;
   position: relative;
   z-index: 2;
-  background-color: rgb(5, 23, 32);
   height: 71px;
+}
+.nav .logo a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+}
+.nav .logo a:hover {
+  color: lightcoral;
 }
 .nav .links {
   margin-left: 2rem;
@@ -149,7 +158,7 @@ p, button, h6 {
   border: solid 2px lightseagreen;
   box-shadow: 0 0 2px lightseagreen;
 }
-.nav .login a {
+.nav .login a, .nav .login p {
   border: none;
   background-color: rgba(0, 0, 0, 0);
   cursor: pointer;
@@ -158,6 +167,9 @@ p, button, h6 {
   box-shadow: 0 0 2px white;
   text-decoration: none;
   color: white;
+}
+.nav .login a:hover, .nav .login p:hover {
+  color: lightcoral;
 }
 
 .heroWrapper {
