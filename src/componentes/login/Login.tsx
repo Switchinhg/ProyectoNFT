@@ -78,8 +78,8 @@ export default function Login() {
               <div className="loginFormWrapper">
                 <p className='textoLogin'>Login</p>
                 <form onSubmit={handleLogin}  >
-                  <input type="text" name="usuario" id="usuario" placeholder='Usuario' ref={loginEmailRef}/>
-                  <input type="password" name="password" id="password" placeholder='Contraseña' ref={loginPassRef}/>
+                  <input type="text" name="usuario" id="usuario" placeholder='Email' ref={loginEmailRef}/>
+                  <input type="password" name="password" id="password" placeholder='Contraseña' required min={5} ref={loginPassRef}/>
                   <input type="submit" value={'Login'} />
                 </form>
                 {/* error */}
@@ -96,8 +96,8 @@ export default function Login() {
         <div className="loginFormWrapper">
           <p className='textoLogin'>Register</p>
           <form onSubmit={handleRegister} >
-            <input type="text" name="usuario" id="usuario" placeholder='Usuario' ref={registerEmailRef}/>
-            <input type="password" name="password" id="password" placeholder='Contraseña' ref={registerPassRef}/>
+            <input type="text" name="usuario" id="usuario" placeholder='Email' required ref={registerEmailRef}/>
+            <input type="password" name="password" id="password" placeholder='Contraseña' required min={5} ref={registerPassRef}/>
             <input type="submit" value={'Register'}/>
           </form>
           {/* error */}
