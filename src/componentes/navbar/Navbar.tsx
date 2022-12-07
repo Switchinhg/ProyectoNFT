@@ -6,7 +6,6 @@ import { UsarAuth } from '../userContext/AuthContext'
 export default function Navbar() {
     // const [user,setUser]= useState<any>(null)
     const { logout , usuarioActivo}:any = UsarAuth()
-console.log(usuarioActivo)
 
 
     useEffect(() => {

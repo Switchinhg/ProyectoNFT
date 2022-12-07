@@ -38,19 +38,39 @@ export  default function AuthProvider({children}:any) {
 
 /* Funcion login */
   async function login(email:string , pass:string) {
-      supabase.auth.signInWithPassword({
+    const logs =  supabase.auth.signInWithPassword({
       email: email ,
       password: pass,
-    }).then((e:any)=>setUsuarioActivo(e.data?.session.user )
-    )
-
+    }).then((e:any)=>{
+      if(e.error=== null){
+        setUsuarioActivo(e.data.session.user )
+        return {success:true}
+      }
+      else{
+        return e.error.message
+      }
+  })  
+  return logs
   }
   /* Funcion register */
   async function register(email:string, pass:string){
-    return supabase.auth.signUp({
-      email: email,
-      password: pass,
-    })
+
+    async function test(email:string, pass:string){
+
+      const { data, error } = await supabase.auth.admin.listUsers()
+      const isAlreadyRegistered = data.users.filter(e=>e.email === email)
+      if(isAlreadyRegistered.length !== 0){
+        return {error:'El email ya existe'}
+      }
+      return supabase.auth.signUp({
+        email: email,
+        password: pass,
+      })
+    }
+    const bring =test(email, pass)
+return bring
+  
+
   }
 
 /* Funcion logout */
