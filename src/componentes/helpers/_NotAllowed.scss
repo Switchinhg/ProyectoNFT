@@ -1,0 +1,9 @@
+.notAllowedContainer{
+    height: calc(100vh - 71px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    color:white;
+}

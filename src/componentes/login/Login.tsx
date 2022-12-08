@@ -35,7 +35,7 @@ export default function Login() {
       await login(loginEmailRef.current.value, loginPassRef.current.value)
       .then((e:any)=>{
         if(e.success){
-          navigate('/')
+          navigate('/Profile')
         }
         else{
           setError(e)
@@ -51,23 +51,21 @@ export default function Login() {
       setLoading(true)
       e.preventDefault()
       try{
-
-      await register(registerEmailRef.current.value, registerPassRef.current.value)
-        .then((e:any)=>{
-          if(e.error){
-            setError(e.error)
+        await register(registerEmailRef.current.value, registerPassRef.current.value)
+          .then((e:any)=>{
+            if(e.error){
+              setError(e.error)
+              setTimeout(() => {
+                setError('')
+              }, 3000);
+            }else{
+              navigate('/CheckMail')
+            }
+          })
+          .finally(
             setTimeout(() => {
-              setError('')
-            }, 3000);
-          }else{
-            navigate('/CheckMail')
-          }
-        })
-        .finally(
-
-          setTimeout(() => {
-            setLoading(false)
-          }, 3000))
+              setLoading(false)
+            }, 3000))
       }catch(error:any){
         setError(error)
       }
