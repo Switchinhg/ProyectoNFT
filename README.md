@@ -1,5 +1,7 @@
 # Proyecto de pagina NFT 
 
+## En desarrollo 
+
 - con Supabase para el backend
 
 
