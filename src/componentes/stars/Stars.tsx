@@ -12,7 +12,7 @@ export default function Stars() {
         return Math.floor(Math.random() *  (20 - 5)+ 5)
     }
     const randomDelay = (num: number) =>{
-        console.log(Math.floor(Math.random() *  (5 - 2)+ num))
+        // console.log(Math.floor(Math.random() *  (5 - 2)+ num))
         return Math.floor(Math.random() *  (5 - 2)+ num)
     }
 

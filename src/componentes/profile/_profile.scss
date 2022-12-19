@@ -18,4 +18,34 @@
         }
 
     }
+    .CambiarNombre{
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 2;
+        background-color:black;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        form{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            background-color: gray;
+            padding: 2rem;
+            gap: 0.5rem;
+            input{
+                padding: 0.5rem 1rem;
+            }
+            input[type=submit]{
+                cursor: pointer;
+                background-color: azure;
+                width: 100%;
+            }
+        }
+    }
 }

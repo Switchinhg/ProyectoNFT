@@ -10,8 +10,6 @@ import { UsarAuth } from './componentes/userContext/AuthContext';
 
 function App() {
   const {usuarioActivo}:any = UsarAuth()
-  console.log('app')
-  console.log(usuarioActivo)
 
   return (
     <div className="bg">
