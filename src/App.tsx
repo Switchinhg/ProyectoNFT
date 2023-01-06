@@ -9,6 +9,9 @@ import Profile from './componentes/profile/Profile';
 import { UsarAuth } from './componentes/userContext/AuthContext';
 
 function App() {
+
+
+
   const {usuarioActivo}:any = UsarAuth()
 
   return (
