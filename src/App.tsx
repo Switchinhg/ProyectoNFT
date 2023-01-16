@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes,Route, Navigate} from 'react-router-dom'
 import CheckMail from './componentes/CheckMail/CheckMail';
+import Explore from './componentes/explore/Explore';
 
 import FrontPage from './componentes/frontPage/FrontPage';
 import RutasProtegidasLogin from './componentes/helpers/Verificaciones';
@@ -26,6 +27,7 @@ function App() {
           <Route path='/login' element={<Login />}/>
           <Route path='/CheckMail' element={<CheckMail />}/>
           <Route path='/profile' element={<RutasProtegidasLogin usuarioActivo={usuarioActivo}><Profile /></RutasProtegidasLogin> }/>
+          <Route path='/explore' element={<Explore />}/>
           
           <Route path='*' element={<FrontPage/>} />
         </Routes>

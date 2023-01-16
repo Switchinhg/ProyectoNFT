@@ -22,7 +22,7 @@ const logouts=()=>{
         </div>
         <div className="links">
             {/* PlaceHolders */}
-            <p>Explore</p>
+            <NavLink to='/explore'>Explore</NavLink>
             <p>Create</p>
             <p>Feed</p>
             <NavLink to={'/Profile'}>Perfil</NavLink>

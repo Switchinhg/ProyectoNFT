@@ -1,0 +1,70 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    margin-top: 1rem;
+    color: white;
+    .filtrogridwrap{
+        display: flex;
+        gap: 1rem;
+    }
+    .filtros{
+        width: 200px;
+        border: 1px white solid;
+        height: 400px;
+
+    }
+    .nftGrid{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        width: 782px;
+        .nft{
+            position: relative;
+            width: 250px;
+            height: 300px;
+            &:hover {
+                cursor: pointer;
+
+                .info{
+                    // animation: test 1s 1 alternate ease-out forwards;
+                    opacity:1;
+                    transition: .5s;
+                    // transform: translateY(-75px);
+                }
+            }
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            .info{
+                height: 80px;
+                background: linear-gradient(0deg, rgba(2,0,36,0.8) 0%, rgba(2,0,36,0.56) 55%, rgba(2,0,36,0.02) 100%);
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                padding: 0.5rem;
+                opacity: 0;
+                p{
+                    color: white;
+                }
+                
+            }
+        }
+    }
+}
+
+@keyframes test {
+
+    0%{
+    }
+    50%{
+    }
+    100%{
+        transform: translateY(-75px);
+    }
+}
