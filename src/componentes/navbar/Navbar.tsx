@@ -1,7 +1,5 @@
-import React, { useEffect, useState } from 'react'
 import {SlMagnifier} from 'react-icons/sl'
 import { NavLink, useNavigate } from 'react-router-dom'
-import CheckMail from '../CheckMail/CheckMail';
 import { UsarAuth } from '../userContext/AuthContext'
 
 

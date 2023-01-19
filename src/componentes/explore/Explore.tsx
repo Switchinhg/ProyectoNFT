@@ -1,11 +1,25 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React, { useEffect, useState } from 'react'
+import { getFetch } from '../helper/Fetch'
+// import { Link, useParams } from 'react-router-dom'
+import ExploreList from './ExploreList'
 
 
 export default function Explore() {
-/**
- * TODO: buscar los nfts en el smart contract 
- **/
+    const [nfts, setNfts ] = useState()
+    /**
+     * TODO: buscar los nfts en el smart contract 
+     **/
+
+
+    useEffect(() =>  {
+       getFetch().then(nftData=>{
+        setNfts(nftData)
+       })
+    }, [])
+    
+    
+if(!nfts) return <h2 style={{color:'white'}}>CARGANDO</h2>
+
   return (
     <section className='container'>
 
@@ -24,14 +38,11 @@ export default function Explore() {
                     LINK AL DETAIL DEL NFT,
                     HACERLO MAS BONITO
                 */}
-                <Link to={`/detail/${/* NFT */1}`} className='nft' >
-                    <img src="./imgs/cup.png" alt="" />
-                    <div className='info'>
-                        <p>NFT N°1</p>
-                        <p>HECHO POR SWICHO OBVIO</p>
-                        <p>200ETH</p>
-                    </div>
-                </Link>
+
+
+                {/* MAP */}
+                <ExploreList data={nfts} />
+
             </div>
         </div>
 
